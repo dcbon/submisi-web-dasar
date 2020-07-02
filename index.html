@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Math for Kids</title>
+    <link rel="stylesheet" href="assets/styles/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/styles/css/brands.css">
+    <link rel="stylesheet" href="assets/styles/css/regular.css">
+    <link rel="stylesheet" href="assets/styles/css/solid.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>Simple Math</h1>
+            <p>for kids</p>
+        </div>
+        <div class="menu">
+            <div class="logo">
+                <img src="assets/images/unicorn2.png" alt="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#lessons">Lessons</a></li>
+                    <li><a href="#practice">Practice</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="content">
+            <div id="lessons" class="card">
+                <h2>Lessons</h2>
+                <article class="lessons">
+                    <ol type="A">
+                        <li>Addition
+                            <p>Addition is combining two or more numbers (or things) together to make a new total values.</p>
+                            <figure class="example">
+                                <img src="assets/images/ex1.png" alt="addition example">
+                                <figcaption>example</figcaption>
+                            </figure>
+                            <p>Example: 
+                                When one muffin is added to another one muffin, we will have two muffins <br>
+                                Using Numerals it is: 1 + 1 = 2 <br>
+                                And in words it is: "One plus one equals two" <br>
+                            </p>
+                        </li>
+                        <li>Subtraction
+                            <p>Subtraction is removing objects from a collection. The result of a subtraction is called a difference.</p>
+                            <figure>
+                                <img src="assets/images/ex2.png" alt="subtraction example">
+                                <figcaption>example</figcaption>
+                            </figure>
+                            <p>Example:
+                                When two toast is remove from a group of three toast, there will be only one toast left. <br>
+                                Using Numerals it is: 3 - 2 = 1 <br>
+                                And in words it is: "Three minus two equals one" <br>
+                            </p>
+                        </li>
+                    </ol>
+                </article>
+            </div>
+            <div id="practice" class="card">
+                <h2>Practice</h2>
+                <article class="addition">
+                    <h3>Addition</h3>
+                    <ol type="1">
+                        <img src="assets/images/1.png" alt="practice 1">
+                        <li>
+                            <p>3 cakes + 4 cakes = </p>
+                            <input type="text" id="p1" class="answer">
+                            <button id="answer1" onclick="checkAnswer1()" class="submit">Submit</button>
+                            <p id="message1"></p>                            
+                        </li>
+                        <img src="assets/images/2.png" alt="practice 2">
+                        <li>
+                            <p>2 cookies + 2 cookies = </p>
+                            <input type="text" id="p2" class="answer">
+                            <button id="answer2" onclick="checkAnswer2()" class="submit">Submit</button>
+                            <p id="message2"></p>
+                        </li>
+                        <img src="assets/images/3.png" alt="practice 3">
+                        <li>
+                            <p>5 croissants + 3 croissants = </p>
+                            <input type="text" id="p3" class="answer">
+                            <button id="answer3" onclick="checkAnswer3()" class="submit">Submit</button>
+                            <p id="message3"></p>
+                        </li>
+                        <img src="assets/images/4.png" alt="practice 4">
+                        <li>
+                            <p>5 doughnuts + 4 doughnuts = </p>
+                            <input type="text" id="p4" class="answer">
+                            <button id="answer4" onclick="checkAnswer4()" class="submit">Submit</button>
+                            <p id="message4"></p>
+                        </li>
+                        <img src="assets/images/5.png" alt="practice 5">
+                        <li>
+                            <p>3 muffins + 7 muffins = </p>
+                            <input type="text" id="p5" class="answer">
+                            <button id="answer5" onclick="checkAnswer5()" class="submit">Submit</button>
+                            <p id="message5"></p>
+                        </li>
+                    </ol>
+                </article>
+                <article class="subtraction">
+                    <h3>Subtraction</h3>
+                    <ol type="1">
+                        <img src="assets/images/6.png" alt="practice 6">
+                        <li>
+                            <p>9 coffees - 7 coffees = </p>
+                            <input type="text" id="p6" class="answer">
+                            <button id="answer6" onclick="checkAnswer6()" class="submit">Submit</button>
+                            <p id="message6"></p>
+                        </li>
+                        <img src="assets/images/7.png" alt="practice 7">
+                        <li>
+                            <p>8 eggs - 3 eggs = </p>
+                            <input type="text" id="p7" class="answer">
+                            <button id="answer7" onclick="checkAnswer7()" class="submit">Submit</button>
+                            <p id="message7"></p>
+                        </li>
+                        <img src="assets/images/8.png" alt="practice 8">
+                        <li>
+                            <p>5 popcorns - 2 popcorns = </p>
+                            <input type="text" id="p8" class="answer">
+                            <button id="answer8" onclick="checkAnswer8()" class="submit">Submit</button>
+                            <p id="message8"></p>
+                        </li>
+                        <img src="assets/images/9.png" alt="practice 9">
+                        <li>
+                            <p>6 toasts - 5 toasts = </p>
+                            <input type="text" id="p9" class="answer">
+                            <button id="answer9" onclick="checkAnswer9()" class="submit">Submit</button>
+                            <p id="message9"></p>
+                        </li>
+                        <img src="assets/images/10.png" alt="practice 10">
+                        <li>
+                            <p>10 cakes - 4 cakes = </p>
+                            <input type="text" id="p10" class="answer">
+                            <button id="answer10" onclick="checkAnswer10()" class="submit">Submit</button>
+                            <p id="message10"></p>
+                        </li>
+                    </ol>
+                </article>
+            </div>
+        </div>
+        <aside>
+            <article class="profile">
+                <header>
+                    <figure>
+                        <img src="assets/images/unicorn2.png" alt="">
+                    </figure>
+                </header>
+                <section>
+                    <h2>Profile</h2>
+                    <table>
+                        <tr>
+                           <th>Name</th>
+                           <td>Dian Claudia Bonita</td>
+                        </tr>
+                        <tr>
+                            <th><i class="fas fa-home"></i></th>
+                            <td>Bogor</td>
+                         </tr>
+                        <tr>
+                           <th><i class="far fa-envelope"></i></th>
+                           <td>dcbonitaa@gmail.com</td>
+                        </tr>
+                        <tr>
+                           <th><i class="fab fa-instagram"></i></span></th>
+                           <td>@dianclau</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
+    </main>
+    <footer>
+        <p>Made with <span class="fas fa-heart"></span> in Bogor, &#169; Dian Claudia Bonita</p>
+    </footer>
+    <script src="assets/styles/practice.js"></script>
+</body>
+</html>
